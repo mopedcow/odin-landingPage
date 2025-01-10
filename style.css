@@ -35,10 +35,6 @@ button {
     justify-content: space-between;
 }
     /*      sub-section: nav-container      */
-.nav-container {
-    display: flex;
-    justify-content: space-between;
-}
 .logo-text {
     font-size: 24px;
 }
@@ -50,11 +46,8 @@ button {
     gap: 26px;
 }
     /*      sub-section: hero text and image     */
-.hero-text, .hero-img {
-    width: 50%;
-}
 .hero-text {
-    padding-right: 24px;
+    padding-right: 48px;
     display: flex;
     flex-flow: column nowrap;
     align-items: flex-start;
@@ -65,11 +58,15 @@ button {
     font-weight: 900;
 }
 .hero-img {
-    background-image: url("images/pigeon-birthday.jpg");
     background-size: cover;
+    background: #E7E5EB;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.hero-img img {
+    width: 400px;
+    height: auto;
 }
     /*      section 2: thumbnails       */
 .thumbnails {
