@@ -1,20 +1,29 @@
 * {
-    
     margin: 0;
     padding: 0;
+    /*border: 3px solid rgb(64, 153, 243); -- for illustrative purpose; delete later*/
 }
 body {
     font-family: Roboto, sans-serif;
     display: flex;
     flex-direction: column;
+    margin: 0;
+
 }
-/* Section 1: HEADER */
-/* Flex-related */
+button {
+    color: #FFF;
+    border: 0;
+    font-size: 18px;
+    background: #3882F6;
+    padding: 6px 30px;
+    border-radius: 10px;
+}
+    /*      Section 1: HEADER      */
 .header {
     background: #1F2937;
     color: #F9FAF8;
-    width: 100%;
-    padding: 28px 0 150px;
+    padding: 28px 180px 150px;
+    margin: 0;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
@@ -22,58 +31,57 @@ body {
     gap: 150px;
 }
 .nav-container, .hero-container {
-    width: 1200px;
+    width: 100%;
 }
+.header li, .hero-text p{
+    font-size: 18px;
+    color: #c5c7cb;
+}
+    /*      sub-section: nav-container      */
 .nav-container {
+    flex: 1;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+}
+.logo-text {
+    font-size: 24px;
+}
+.header li {
+    display: inline-block;
 }
 .header-links {
     display: flex;
     gap: 26px;
 }
+    /*      sub-section: hero text and image     */
 .hero-container {
-    background: darkslategray; /*to delete: illustrative purposes only*/
+    /*background: darkslategray; to delete: illustrative purposes only*/
     display: flex;
     justify-content: space-between;
 }
 .hero-text, .hero-img {
     width: 50%;
+    /*border: 3px solid lightslategray; remove this later*/
 }
-.hero-img {
+.hero-text {
+    padding-right: 24px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.hero-text, .hero-img {
-    border: 3px solid lightslategray;
-}
-
-/* colors&fonts etc - to merge with selectors above - don't worry about these right now*/
-
-.hero-img img {
-    height: 100px;
-    width: auto;
-}
-.header li {
-    display: inline-block;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    gap: 16px;
 }
 .hero-text h1 {
     font-size: 48px;
     font-weight: 900;
 }
-.logo-text {
-    font-size: 24px;
+.hero-img {
+    background: darkgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.header li, .hero-text p {
-    font-size: 18px;
-    color: #E5E7EB;
-}
-button {
-    background: #3882F6;
-}
-.header button {
-    border: 2px solid #3882F6;
+.hero-img img {
+    height: 100px;
+    width: auto;
 }
