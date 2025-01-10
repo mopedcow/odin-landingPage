@@ -1,13 +1,10 @@
 * {
     margin: 0;
     padding: 0;
-    /*border: 3px solid rgb(64, 153, 243); -- for illustrative purpose; delete later*/
 }
 body {
     font-family: Roboto, sans-serif;
-    display: flex;
-    flex-direction: column;
-    margin: 0;
+    font-size: 18px;
 }
 button {
     color: #FFF;
@@ -22,8 +19,7 @@ button {
 .header {
     background: #1F2937;
     color: #F9FAF8;
-    padding: 28px 180px 150px;
-    margin: 0;
+    padding: 28px 200px 150px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
@@ -32,17 +28,16 @@ button {
 }
 .nav-container, .hero-container {
     width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 .header li, .hero-text p{
-    font-size: 18px;
     color: #c5c7cb;
 }
     /*      sub-section: nav-container      */
 .nav-container {
-    flex: 1;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
 }
 .logo-text {
     font-size: 24px;
@@ -56,8 +51,7 @@ button {
 }
     /*      sub-section: hero text and image     */
 .hero-container {
-    display: flex;
-    justify-content: space-between;
+
 }
 .hero-text, .hero-img {
     width: 50%;
@@ -67,7 +61,7 @@ button {
     display: flex;
     flex-flow: column nowrap;
     align-items: flex-start;
-    gap: 16px;
+    gap: 18px;
 }
 .hero-text h1 {
     font-size: 48px;
@@ -85,13 +79,11 @@ button {
 }
     /*      section 2: thumbnails       */
 .thumbnails {
-    /* background: palegoldenrod; - to delete */
-    padding: 52px 180px 100px;
+    padding: 52px 200px 100px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    row-gap: 48px;
-    column-gap: 46px;
+    gap: 48px;
 }
 .thumbnails h2 {
     font-size: 36px;
@@ -104,26 +96,28 @@ button {
     width: 180px;
     height: auto;
     text-align: center;
-    color: #777;
+    color: #707478;
     /* flex: 0 0 auto;  not sure if this is doing anything */
 }
 .card img {
     width: 100%;
     height: auto;
+    margin-bottom: 6px;
     border: 4px solid #3882F6;
     border-radius: 18px;
 }
     /*      section 3: testimonials      */
 .testimonials {
     background: #E7E5EB;
+    color: #1F2937;
     padding: 116px 380px 118px;
     display: flex;
     flex-direction: column;
-    color: #1F2937;
+    gap: 12px;
 }
 .testimonials .quote-text {
     font-size: 36px;
-    font-weight: 300;
+    font-weight: 300; /* "light" didn't work for me here */
     font-style: italic;
 }
 .testimonials .quote-attr {
@@ -134,14 +128,14 @@ button {
 }
     /*      Section 4: call to action        */
 .call-action {
-    margin: 120px 180px 122px;
+    margin: 120px 200px 122px;
     padding: 56px 180px 56px;
     background: #3882F6;
     border-radius: 10px;
-    font-size: 18px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 72px;
 }
 .call-action h4 {
     font-weight: 700;
@@ -153,6 +147,7 @@ button {
 }
 .call-action button {
     border: 2px solid #E7E5EB;
+    flex: 0 0 auto; /* to prevent button from growing/shrinking */
 }
 .footer {
     padding: 48px 180px;
