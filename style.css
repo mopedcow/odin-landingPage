@@ -4,10 +4,13 @@
 }
 body {
     font-family: Roboto, sans-serif;
+}
+.header li, .hero-text p, .footer, .call-action p{
+    color: #E7E5EB;
     font-size: 18px;
 }
 button {
-    color: #FFF;
+    color: #F9FAF8;
     border: 0;
     font-size: 18px;
     font-weight: 700;
@@ -31,9 +34,6 @@ button {
     display: flex;
     justify-content: space-between;
 }
-.header li, .hero-text p{
-    color: #c5c7cb;
-}
     /*      sub-section: nav-container      */
 .nav-container {
     display: flex;
@@ -50,9 +50,6 @@ button {
     gap: 26px;
 }
     /*      sub-section: hero text and image     */
-.hero-container {
-
-}
 .hero-text, .hero-img {
     width: 50%;
 }
@@ -68,14 +65,11 @@ button {
     font-weight: 900;
 }
 .hero-img {
-    background: darkgray;
+    background-image: url("images/pigeon-birthday.jpg");
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.hero-img img {
-    height: 100px;
-    width: auto;
 }
     /*      section 2: thumbnails       */
 .thumbnails {
@@ -142,9 +136,6 @@ button {
     font-size: 24px;
     color: #F9FAF8;
 }
-.call-action p {
-    color: #E7E5EB;
-}
 .call-action button {
     border: 2px solid #E7E5EB;
     flex: 0 0 auto; /* to prevent button from growing/shrinking */
@@ -152,7 +143,5 @@ button {
 .footer {
     padding: 48px 180px;
     background: #1F2937;
-    font-size: 18px;
-    color: #E7E5EB;
     text-align: center;
 }
